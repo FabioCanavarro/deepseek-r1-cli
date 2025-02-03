@@ -5,7 +5,10 @@ fn main() {
     let yml = load_yaml!("cli.yml");
     let m = App::from_yaml(yml).get_matches();
     
-    println!("{}",m.value_of("argument1").unwrap());
+    match m.subcommand(){
+        ("run",Some(sub_m)) => println!("Run"),
+        (&_,_) => println!("invalid command")
+    }
 }
 
 

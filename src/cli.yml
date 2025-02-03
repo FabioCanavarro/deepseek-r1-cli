@@ -11,13 +11,16 @@ args:
         takes_value: true
     - INPUT:
         help: Sets the input file to use
-        required: true
+        required: false
         index: 1
     - verbose:
         short: v
         multiple: true
         help: Sets the level of verbosity
 subcommands:
+    - run:
+        about: Start the conversation
+        version: "1.0"
     - test:
         about: controls testing features
         version: "1.3"
