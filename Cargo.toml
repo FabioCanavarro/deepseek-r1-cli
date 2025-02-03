@@ -1,0 +1,7 @@
+[package]
+name = "deepseek-r1-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = {version = "2.31", features = ["yaml"]}
